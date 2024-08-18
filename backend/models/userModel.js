@@ -127,30 +127,30 @@ const userSchema = new mongoose.Schema({
 
 
 
-    college: {
-        type: String,
-    },
-    eatingHabits: {
-        type: String,
-        enum: {
-            values: ['vegetarian', 'non-vegetarian', 'eggetarian', 'vegan'],
-            message: 'Invalid value for Eating Habits'
-        }
-    },
-    drinkingHabits: {
-        type: String,
-        enum: {
-            values: ['Non-drinker', 'Light/social drinker', 'Regular-drinker'],
-            message: 'Invalid value for Drinking Habits'
-        }
-    },
-    smokingHabits: {
-        type: String,
-        enum: {
-            values: ['Non-smoker', 'Light/social smoker', 'Regular-smoker'],
-            message: 'Invalid value for Drinking Habits'
-        }
-    },
+    // college: {
+    //     type: String,
+    // },
+    // eatingHabits: {
+    //     type: String,
+    //     enum: {
+    //         values: ['vegetarian', 'non-vegetarian', 'eggetarian', 'vegan'],
+    //         message: 'Invalid value for Eating Habits'
+    //     }
+    // },
+    // drinkingHabits: {
+    //     type: String,
+    //     enum: {
+    //         values: ['Non-drinker', 'Light/social drinker', 'Regular-drinker'],
+    //         message: 'Invalid value for Drinking Habits'
+    //     }
+    // },
+    // smokingHabits: {
+    //     type: String,
+    //     enum: {
+    //         values: ['Non-smoker', 'Light/social smoker', 'Regular-smoker'],
+    //         message: 'Invalid value for Drinking Habits'
+    //     }
+    // },
 
     // Religious
     star: {

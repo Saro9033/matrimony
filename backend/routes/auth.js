@@ -36,7 +36,7 @@ router.route('/user/:id').get(isAuthenticatedUser, getSpecificUserByAdmin)
 
 // //Admin Routes
 router.route('/admin/users').get(isAuthenticatedUser,authorizeRoles('admin'), getAllUsersByAdmin)
-router.route('/insert-many').post(isAuthenticatedUser,authorizeRoles('admin'), insertManyUsers)                             
+router.route('/insert-many').post( insertManyUsers)                             
 router.route('/admin-remove/:id').delete(isAuthenticatedUser,authorizeRoles('admin'), deleteUserByAdmin)                             
 
 
